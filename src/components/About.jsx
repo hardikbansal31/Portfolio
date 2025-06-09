@@ -4,9 +4,11 @@ import { Container } from "react-bootstrap";
 
 const About = () => {
   return (
-    <section id="about" className="py-10 bg-white">
+    <section id="about" className="py-10 bg-black">
       <Container>
-        <SectionHeader>About Me</SectionHeader>
+        <SectionHeader>
+          <strong>ABOUT ME</strong>
+        </SectionHeader>
 
         <p className="text-lg leading-relaxed max-w-3xl mx-auto">
           I’m a{" "}

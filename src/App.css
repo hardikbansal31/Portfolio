@@ -1,11 +1,25 @@
 @import "tailwindcss";
 
-@keyframes float {
-  0%   { transform: translateY(0) rotate(0deg);   opacity: 1; }
-  50%  { transform: translateY(-100px) rotate(180deg); opacity: .5; }
-  100% { transform: translateY(0) rotate(360deg); opacity: 1; }
+* {
+  font-family: "Times New Roman", Times, serif;
+  background-color: black;
+  color: wheat;
 }
-.logoCloud > img {
-  position: absolute;
-  animation: float var(--dur) linear infinite;
+
+.navbar,
+.navbar * {
+  color: wheat !important;
+  background-color: black !important;
+}
+
+/* Hover effect for nav links */
+.navbar .nav-link:hover {
+  color: orange !important;
+  text-decoration: underline; /* optional */
+  transition: color 0.7s ease;
+}
+
+/* This targets the three lines inside the hamburger icon */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='wheat' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }

@@ -4,7 +4,9 @@ import SectionHeader from "./SectionHeader";
 const Edu = () => {
   return (
     <section id="edu" className="py-10">
-      <SectionHeader>Education</SectionHeader>
+      <SectionHeader>
+        <strong>EDUCATION</strong>
+      </SectionHeader>
 
       <h4 className="text-2xl font-semibold">Mumbai University</h4>
 

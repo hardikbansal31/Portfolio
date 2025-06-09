@@ -9,9 +9,11 @@ const Projects = () => {
 
   return (
     <section id="projects" className="py-10">
-      <SectionHeader>Projects</SectionHeader>
+      <SectionHeader>
+        <strong>PROJECTS</strong>
+      </SectionHeader>
       <select
-        className="mb-6 px-3 py-2 border rounded"
+        className="mb-6 px-3 py-2 rounded bg-dark"
         value={filter}
         onChange={(e) => setFilter(e.target.value)}
       >
@@ -26,16 +28,16 @@ const Projects = () => {
           .map((p) => (
             <article
               key={p.title}
-              className="border rounded-xl p-6 hover:shadow-lg transition"
+              className="rounded-xl p-6 hover:shadow-lg transition bg-dark"
             >
-              <h3 className="text-xl font-semibold">{p.title}</h3>
-              <p className="my-2 text-sm">{p.description}</p>
-              <p className="text-xs mb-4">{p.tech.join(", ")}</p>
+              <h3 className="text-xl font-semibold bg-dark">{p.title}</h3>
+              <p className="my-2 text-sm bg-dark">{p.description}</p>
+              <p className="text-xs mb-4 bg-dark">{p.tech.join(", ")}</p>
               <a
                 href={p.demo}
                 target="_blank"
                 rel="noreferrer"
-                className="text-blue-600 underline"
+                className="text-blue-600 underline bg-dark"
               >
                 Live Demo
               </a>{" "}
@@ -44,7 +46,7 @@ const Projects = () => {
                 href={p.repo}
                 target="_blank"
                 rel="noreferrer"
-                className="text-blue-600 underline"
+                className="text-blue-600 underline bg-dark"
               >
                 GitHub
               </a>

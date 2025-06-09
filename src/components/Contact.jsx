@@ -6,7 +6,9 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 const Contact = () => {
   return (
     <section id="contact">
-      <SectionHeader>Contact</SectionHeader>
+      <SectionHeader>
+        <strong>CONTACT</strong>
+      </SectionHeader>
       <Row className="text-lg">
         <Col md={6} className="mb-4">
           <p>

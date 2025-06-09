@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 const NaviBar = () => {
   return (
     <>
-      <Navbar expand="lg" className="bg-body-tertiary text-lg">
+      <Navbar expand="lg" className="bg-black text-lg">
         <Container>
           <Navbar.Brand href="#home">Hardik Bansal</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
