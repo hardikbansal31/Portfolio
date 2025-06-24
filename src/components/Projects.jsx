@@ -31,8 +31,8 @@ const Projects = () => {
               className="rounded-xl p-6 hover:shadow-lg transition bg-dark"
             >
               <h3 className="text-xl font-semibold bg-dark">{p.title}</h3>
-              <p className="my-2 text-sm bg-dark">{p.description}</p>
-              <p className="text-xs mb-4 bg-dark">{p.tech.join(", ")}</p>
+              <p className="my-2 text-lg bg-dark">{p.description}</p>
+              <p className="text-md mb-4 bg-dark">{p.tech.join(", ")}</p>
               <a
                 href={p.demo}
                 target="_blank"
